@@ -22,3 +22,7 @@ header{
 .container h1{
     font-size: 500%;
 }
+
+.card-body p{
+    font-family: "Sometype Mono", monospace;
+}
