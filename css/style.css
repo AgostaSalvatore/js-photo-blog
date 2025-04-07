@@ -85,3 +85,8 @@ header{
     z-index: 3;
 }
 /* END card transition */
+
+.card:hover .pin{
+    display:none;
+}
+/* END card transition */
