@@ -63,3 +63,15 @@ header{
     font-size: 1.2rem;
     cursor: pointer;
 }
+
+.clickable-image {
+    cursor: pointer;
+}
+
+.card{
+    transition: transform 0.3s ease;
+}
+.card:hover {
+    transform: scale(1.05) rotate(10deg);
+    z-index: 3;
+}

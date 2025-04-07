@@ -9,7 +9,7 @@ axios.get('https://lanciweb.github.io/demo/api/pictures/').then((resp) => {
         let photoCard = `<div class="col-lg-4 col-md-6 col-sm-12 ">
                             <div class="card mt-5"> 
                                 <div class="card-body">
-                                    <img src="${photos[i].url}" alt="" class="img-fluid mb-4">
+                                    <img src="${photos[i].url}" alt="" class="img-fluid mb-4 clickable-image">
                                     <div class="card-info">
                                         <p class="card-text text-secondary">${photos[i].date}</p>
                                         <h5 class="card-title"><b>${photos[i].title}</b></h5>
