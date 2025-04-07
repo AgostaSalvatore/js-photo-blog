@@ -9,5 +9,16 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: "Edu TAS Beginner", cursive;
 }
 
+.pin{
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.container h1{
+    font-size: 500%;
+}
