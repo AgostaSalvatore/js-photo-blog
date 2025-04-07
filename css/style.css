@@ -1,0 +1,12 @@
+body{
+    background-image: url("../img/cork.png");
+}
+
+header{
+    background-image: url("../img/wall.png");
+    height: 10vh;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
