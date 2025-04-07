@@ -64,11 +64,15 @@ header{
 
 #close-overlay{
     padding: 10px 20px;
-    background-color: white;
+    background-color: transparent;
     border: none;
     border-radius: 5px;
     font-size: 1.2rem;
     cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 160px;
+    color: red;
 }
 
 .clickable-image {
@@ -90,3 +94,48 @@ header{
     display:none;
 }
 /* END card transition */
+
+
+i{
+    font-size: 50px;
+}
+
+/* Media Query for Button */
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    #close-overlay {
+        right: 50px;
+    }
+    
+    i {
+        font-size: 40px;
+    }
+    
+    .container h1 {
+        font-size: 300%;
+    }
+    
+    .card-info h5 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    #close-overlay {
+        right: 10px;
+    }
+    
+    i {
+        font-size: 30px;
+    }
+    
+    .container h1 {
+        font-size: 200%;
+    }
+    
+    .card-info h5 {
+        font-size: 1.9rem;
+    }
+}
