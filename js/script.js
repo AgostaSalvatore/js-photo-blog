@@ -18,7 +18,7 @@ function addClickListenersToImages() {
             // Aggiunge la classe "img-fluid" all'immagine nell'overlay per renderla responsive
             clickImage.classList.add("img-fluid");
             // Mostra l'overlay impostando display: flex
-            overlay.style.display = "flex";
+            overlay.classList.add("d-flex");
         });
     });
 }
@@ -33,7 +33,7 @@ axios.get('https://lanciweb.github.io/demo/api/pictures/').then((resp) => {
     for (let i = 0; i < photos.length; i++) {
         // Crea una stringa HTML per la card della foto corrente
         let photoCard = `<div class="col-lg-4 col-md-6 col-sm-12 ">
-                            <div class="card mt-5"> 
+                            <div class="card mt-4"> 
                                 <div class="card-body">
                                     <!-- Immagine della foto con classe clickable-image e attributo data-src per memorizzare l'URL -->
                                     <img src="${photos[i].url}" alt="" class="img-fluid mb-4 clickable-image" data-src="${photos[i].url}">
@@ -59,5 +59,5 @@ axios.get('https://lanciweb.github.io/demo/api/pictures/').then((resp) => {
 // Aggiunge un event listener al pulsante di chiusura dell'overlay
 overlayButton.addEventListener("click", () => {
     // Nasconde l'overlay impostando display: none quando il pulsante viene cliccato
-    overlay.style.display = "none";
+    overlay.classList.remove("d-flex");
 });
